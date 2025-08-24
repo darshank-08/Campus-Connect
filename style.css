@@ -1,0 +1,503 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+     background-color: azure;
+}
+
+.hero-sec{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home{
+    background: linear-gradient(to bottom, #e4e9fd 0%, #f0f3e8 100%);
+    height: 584px;
+    width:100%;
+    overflow: hidden;
+    background-position: center;
+}
+ul{
+    list-style: none;
+}
+
+.navbar{
+    height: 2.7rem;
+    width: 95%;
+    background-color: azure;
+    border: 1px black solid;
+    display: flex;
+    justify-self: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    align-items: center;
+    z-index: 10px;
+}
+
+.nav-list{
+    width: 100%;
+    display: flex;
+    position: relative;
+    gap: 280px;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-right{
+   margin-right: 10px;
+}
+
+.nav-left{
+    margin-left: 10px;
+}
+
+.nav-center{
+    display: flex;
+    gap: 25px;
+}
+
+.nav-items{
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+}
+
+.nav-items:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.logo-1{
+    font-family: "Qwigley", cursive;
+    font-size: 2rem;
+}
+
+.login{
+    color: rgb(74, 125, 171);
+    position: relative;
+}
+
+/* hero section*/
+
+.main-slogan-heading{
+   font-size: 4.5rem;
+   text-align: center;
+   font-family: "Inter", sans-serif;
+   position: relative;
+   bottom: 35px;
+   max-width: 600px;
+}
+
+.main-slogan-paragraph{
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+    font-size: 0.9rem;
+    bottom: 10px;
+    max-width: 450px;
+    position: relative;
+}
+
+.join-btn{
+    position: relative;
+    top: 40px;
+    width: 100px;
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+.join-btn:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Second page */
+
+.home-2{
+    background: rgb(244, 246, 247);
+    height: 584px;
+    width:100%;
+    overflow: hidden;
+    background-position: center;
+}
+
+.why-choose-heading{
+    font-size: 3.2rem;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    position: relative;
+    bottom: 20px;
+    max-width: 550px;
+}
+
+.why-choose-paragraph{
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.explore-btn{
+    position: relative;
+    top: 40px;
+    width: 100px;
+    padding: 10px;
+    border: 1px solid black;
+    background: rgb(244, 246, 247);;
+    color: black;
+    border-radius: 20px;
+}
+
+.explore-btn:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.content-1{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.content-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns:210px 210px 210px 210px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.content-container{
+    display: flex;
+    gap: 25px;
+    max-width: 90%;
+}
+
+.card-content{
+    background-color: rgba(230, 228, 228, 0.799);
+    display: flex;
+    flex-direction: column;
+    height: 210px;
+    max-width: 170px;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+
+.icon{
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.content-heading{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.content-discription{
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.with-anchor{
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+/* Third page  */
+
+.home-3{
+    background: rgba(255, 255, 255, 0.642);
+    height: 584px;
+    width:100%;
+    overflow: hidden;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 44% 44%;
+    grid-template-rows: 82%;
+    justify-content: center;
+    align-content: center;
+}
+
+.home-3-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgb(255, 255, 255);
+}
+
+.home-3-heading{
+    font-family: "Inter", sans-serif;
+    font-size: 1.7rem;
+    max-width: 340px;
+    padding-left: 40px;
+}
+
+.home-3-para{
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 100;
+    max-width: 300px;
+    padding: 15px 0px 5px 40px;  
+}
+
+.home-3-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgb(255, 255, 255);
+}
+
+.clg-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+    background-color: black;
+    color: #e4e9fd;
+}
+
+.home-3-right-para{
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 100;
+    max-width: 490px;
+    margin: 30px 0px 30px 0px;
+}
+
+.home-3-join-btn{
+    width: 60px;
+    padding: 10px;
+    border: 1px solid black;
+    background: rgb(244, 246, 247);;
+    color: black;
+    border-radius: 20px;
+}
+
+.home-3-join-btn:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Fourth page */
+
+.home-4{
+    background: rgba(234, 224, 224, 0.642);
+    height: 584px;
+    width:100%;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    overflow: hidden;
+    justify-content: center;
+    align-content: center;
+}
+
+.sec{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    padding: 5px;
+    border: 0.5px solid black;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+
+.prev-btn:hover, .next-btn:hover {
+    background: #fdfefe;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.quote{
+    font-size: 1.7rem;
+}
+
+.sec-2{
+    border: black solid 1px;
+    flex-direction: column;
+    /* background: #000; */
+    position: relative;
+    /* z-index: 1; */
+}
+
+.page {
+  height: 100%;
+  width: 100%;
+  display: none;              /* hidden by default */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  gap: 20px;
+}
+
+
+@media (min-width: 751px) and (max-width: 1025px){
+    .navbar{
+        height: 2.4rem;
+    }
+
+    .logo-1{
+        font-size: 1.8rem;
+    }
+
+    .nav-list{
+        gap: 10px;
+    }
+
+    /* Second page */
+    .home-2{
+        height: 900px;
+    }
+
+    .content-1{
+        height: 31%;
+    }
+
+    .why-choose-heading{
+        font-size: 1.7rem;
+    }
+    .content-2{
+        height: 69%;
+    }
+
+    .cards-container{
+        height: 490px;
+        width: 474px;
+        grid-template-columns:210px 210px;
+        grid-template-rows: 210px 210px;
+        row-gap: 70px;
+    }
+    /* third page */
+
+    .home-3-heading{
+        font-size: 1.2rem;
+    }
+
+    .home-3-join-btn{
+        padding: 6px;
+    }
+
+    .home-3{
+        height: 498px;
+    }
+}
+
+
+@media (min-width:310px) and (max-width: 750px){
+
+    .home{
+        height: 480px;
+    }
+    .navbar{
+        height: 1.5rem;
+    }
+
+
+    .nav-list{
+        gap: 4px;
+        font-size: 0.47rem;
+    }
+
+    .nav-center{
+        gap: 8px;
+    }
+
+    .logo-1{
+        font-size: 1rem;
+    }
+
+    .main-slogan-heading{
+        font-size: 2.5rem;
+    }
+
+    .main-slogan-paragraph{
+        font-size: 0.57rem;
+        bottom: 5px;
+    }
+
+    /* Second page */
+    .home-2{
+        height: 1500px;
+    }
+
+    .content-1{
+        height: 18%;
+    }
+
+    .why-choose-heading{
+        font-size: 1.3rem;
+        max-width: 200px;
+    }
+
+    .why-choose-paragraph{
+        max-width: 225px;
+        font-size: 0.80rem;
+        font-weight: 200;
+    }
+
+    .explore-btn{
+        width: 80px;
+        padding: 8px;
+    }
+    .content-2{
+        height: 83%;
+    }
+
+    .cards-container{
+        height: 1050px;
+        width: 474px;
+        grid-template-columns:210px;
+        grid-template-rows: 210px 210px 210px 210px;
+        row-gap: 70px;
+    }
+
+    /* page 3 */
+
+    .home-3{
+        grid-template-columns: 88%;
+        grid-template-rows: 20% 70%;
+        height:500px;
+        margin-top: 20px;
+    }
+    
+
+    .home-3-heading{
+        font-size: 1.3rem;
+    }
+}
