@@ -164,7 +164,8 @@ ul{
 }
 
 .explore-btn:hover{
-    transform: scale(1.05);
+    background-color: black;
+    color: #ffffff;
     cursor: pointer;
 }
 .content-1{
@@ -303,14 +304,15 @@ ul{
 }
 
 .home-3-join-btn:hover{
-    transform: scale(1.05);
+    background-color: black;
+    color: #ffffff;
     cursor: pointer;
 }
 
 /* Fourth page */
 
 .home-4{
-    background: rgb(244, 246, 247);
+    background:rgba(246, 242, 242, 0.945);
     height: 584px;
     width:100%;
     display: grid;
@@ -385,6 +387,110 @@ ul{
     font-weight: 600;
 }
 
+/* fifth page */
+
+.home-5{
+    background: rgba(255, 255, 255, 0.642);
+    height: 584px;
+    width:100%;
+    overflow: hidden;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.home-5-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    gap: 25px;
+}
+
+.home-5-left-heading{
+    font-family: "Inter", sans-serif;
+    font-size: 4rem;
+    max-width: 400px;
+}
+
+.home-left-para{
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+    font-size: 0.9rem;
+    font-weight: 100;
+    max-width: 400px;
+    text-align: left;
+    padding: 0px 20px 0px 20px;  
+    position: relative;
+    left: 10px;
+}
+
+.home-5-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-color: rgb(255, 255, 255);
+    gap: 25px;
+}
+
+.contact-head{
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+}
+
+.form{
+    height: 350px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 30% 40%;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.input-label{
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.input-field{
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.textarea-field{
+    width: 420px;
+    height: 80px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.submit-btn{
+    background-color: #fefefe;
+    height: 33px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.submit-btn:hover{
+    background-color: black;
+    color: #ffffff;
+    cursor: pointer;
+}
+
 @media (min-width: 751px) and (max-width: 1025px){
     .navbar{
         height: 2.4rem;
@@ -437,8 +543,19 @@ ul{
 
     /* forth page */
 
-}
+    /* fifth page */
+    
+    .home-5{
+        height: 900px;
+        grid-template-columns: 100%;
+        grid-template-rows: 35% 65%;
+    }
 
+    .home-5-right{
+        align-items: center;
+    }
+
+}
 
 @media (min-width:310px) and (max-width: 750px){
 
@@ -532,5 +649,41 @@ ul{
         font-size: 0.8rem;
         max-width: 300px;
         padding: 0px 20px 0px 20px;
+    }
+
+    /* fifth page */
+
+    .home-5{
+        height: 900px;
+        grid-template-columns: 100%;
+        grid-template-rows: 35% 65%;
+    }
+
+    .home-5-left-heading{
+        font-size: 2.7rem;
+        max-width: 350px;
+    }
+
+    .home-left-para{
+        font-size: 0.7rem;
+        max-width: 250px;
+        text-align: center;
+        padding: 0px 10px 0px 10px;  
+    }
+
+    .home-5-right{
+        align-items: center;
+        padding: 0px 20px 0px 20px;
+    }
+
+    .form{
+        width: 90%;
+        padding : 0px 20px 0px 20px;
+        justify-content: center;
+    }
+
+    .submit-btn{
+        width: 150px;
+        height: 35px;
     }
 }
