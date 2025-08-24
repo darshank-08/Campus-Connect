@@ -640,6 +640,9 @@ ul{
 
     /* fourth page */
 
+    .home-4{
+        grid-template-columns: 15% 70% 15%;
+    }
     .quote{
         font-size: 1rem;
         padding: 0px 20px 0px 20px;
@@ -680,6 +683,14 @@ ul{
         width: 90%;
         padding : 0px 20px 0px 20px;
         justify-content: center;
+    }
+
+    .input-field{
+        max-width: 120px;
+    }
+
+    .textarea-field{
+        max-width: 250px;
     }
 
     .submit-btn{
