@@ -310,7 +310,7 @@ ul{
 /* Fourth page */
 
 .home-4{
-    background: rgba(234, 224, 224, 0.642);
+    background: rgb(244, 246, 247);
     height: 584px;
     width:100%;
     display: grid;
@@ -343,7 +343,10 @@ ul{
 }
 
 .quote{
-    font-size: 1.7rem;
+    font-size: 1.6rem;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .sec-2{
@@ -366,6 +369,21 @@ ul{
   gap: 20px;
 }
 
+.feature-emoji{
+    font-size: 5rem;
+    padding-bottom: 20px;
+}
+
+.feature-disc{
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    max-width: 400px;
+}
+
+.feature-span{
+    font-weight: 600;
+}
 
 @media (min-width: 751px) and (max-width: 1025px){
     .navbar{
@@ -416,6 +434,9 @@ ul{
     .home-3{
         height: 498px;
     }
+
+    /* forth page */
+
 }
 
 
@@ -427,7 +448,6 @@ ul{
     .navbar{
         height: 1.5rem;
     }
-
 
     .nav-list{
         gap: 4px;
@@ -499,5 +519,18 @@ ul{
 
     .home-3-heading{
         font-size: 1.3rem;
+    }
+
+    /* fourth page */
+
+    .quote{
+        font-size: 1rem;
+        padding: 0px 20px 0px 20px;
+    }
+
+    .feature-disc{
+        font-size: 0.8rem;
+        max-width: 300px;
+        padding: 0px 20px 0px 20px;
     }
 }
