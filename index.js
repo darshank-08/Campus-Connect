@@ -26,3 +26,14 @@ $(".next-btn").on("click touchstart", function(e){
 
 // show first page initially
 showPage(currentPage);
+
+
+// for login page
+
+$(".nav-list li a").click(function(e) {
+  e.preventDefault();
+
+ 
+  $(".nav-list li a").removeClass("active");
+  $(this).addClass("active");
+});
