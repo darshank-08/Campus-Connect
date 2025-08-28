@@ -7,8 +7,7 @@ function showPage(index) {
 }
 
 // prev button
-$(".prev-btn").on("click touchstart", function(e){
-  e.preventDefault(); // avoid double trigger
+$(".prev-btn").on("click touchstart", function(e){ // avoid double trigger
   if (currentPage > 0) {
     currentPage--;
     showPage(currentPage);
@@ -17,7 +16,6 @@ $(".prev-btn").on("click touchstart", function(e){
 
 // next button
 $(".next-btn").on("click touchstart", function(e){
-  e.preventDefault();
   if (currentPage < pages.length - 1) {
     currentPage++;
     showPage(currentPage);

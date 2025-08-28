@@ -9,7 +9,8 @@ a{
 }
 
 body{
-     background-color: azure;
+    background-color: azure;
+    transition: opacity 0.6s ease;
 }
 
 .hero-sec{
@@ -112,12 +113,15 @@ ul{
 .join-btn{
     position: relative;
     top: 40px;
-    width: 100px;
+    width: 60px;
     padding: 10px;
     border: none;
     background-color: black;
     color: #ffffff;
     border-radius: 20px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
 }
 
 .join-btn:hover{
@@ -295,8 +299,11 @@ ul{
 }
 
 .home-3-join-btn{
-    width: 60px;
-    padding: 10px;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    font-weight: 100;
+    width: 40px;
+    padding: 7px 10px;
     border: 1px solid black;
     background: rgb(244, 246, 247);;
     color: black;
@@ -312,7 +319,7 @@ ul{
 /* Fourth page */
 
 .home-4{
-    background:rgba(246, 242, 242, 0.945);
+    background:rgba(246, 242, 242, 0.975);
     height: 584px;
     width:100%;
     display: grid;
