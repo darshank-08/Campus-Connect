@@ -29,11 +29,19 @@ showPage(currentPage);
 
 
 // for login page
+// for login page
+$(".login-form .panel").hide();
+$(".navbar .student").addClass("active");
+$("#student-panel").show();
 
-$(".nav-list li a").click(function(e) {
-  e.preventDefault();
+$(".navbar button").click(function(){
+  let curruntbtn = $(this).attr("class").split(" ")[0]; // only first class (student/teacher/admin)
+  console.log(curruntbtn);
 
- 
-  $(".nav-list li a").removeClass("active");
-  $(this).addClass("active");
+  $(".navbar button").removeClass("active");
+  $(this).addClass("active"); // ✅ use clicked element
+
+  $(".login-form .panel").hide();
+  $("#" + curruntbtn + "-panel").show();
+  console.log("#" + curruntbtn + "-panel");
 });

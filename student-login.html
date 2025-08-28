@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Student Login</title>
     <link rel="stylesheet" href="student-login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,31 +14,67 @@
 
 
     <div class="std-login">
-        <div class="navbar">
-                <ul class="nav-list">
-                    <li class="std"><a href="./student-login.html">Student</a></li>
-                    <li>|</li>
-                    <li class="tchr"><a href="">Teacher</a></li>
-                    <li>|</li>
-                    <li class="adm"><a href="">Admin</a></li>
-                </ul>
-        </div>
+        <nav class="navbar">
+            <button class="student">Student</button>
+            <p>|</p>
+            <button class="teacher">Teacher</button>
+            <p>|</p>
+            <button class="admin">Admin</button>
+        </nav>
 
         <div class="login-form">
-            <div class="sign-up login-1">
-                <h1 class="signup-title">sign-up</h1>
-                <img src="./assets/Mobile login-amico.svg" alt="sign-up" class="signup-svg" >
-                <button class="signup-btn">sign-up</button>
+
+                <!-- student panel -->
+            <div class="student-container">
+                <div id="student-panel" class="panel">
+                    <div class="sign-up login-1">
+                        <h1 class="signup-title">sign-up</h1>
+                        <img src="./assets/Sign up-cuate.svg" alt="sign-up" class="signup-svg" >
+                        <button class="signup-btn">sign-up</button>
+                    </div>
+                        
+                    <div class="login login-1">
+                        <h1 class="signup-title">login</h1>
+                        <img src="./assets/Login-pana.svg" alt="sign-up" class="signup-svg" >
+                        <button class="signup-btn">login</button>
+                    </div>
+                </div>
             </div>
-                
-            <div class="login login-1">
-                <div class="sign-up login-1">
-                <h1 class="signup-title">login</h1>
-                <img src="./assets/Login-rafiki.svg" alt="sign-up" class="signup-svg login-svg" >
-                <button class="signup-btn">login</button>
+                <!-- teacher panel -->
+
+            <div class="teacher-container">
+                <div id="teacher-panel" class="panel">
+                    <div class="sign-up login-1">
+                        <h1 class="signup-title">sign-up</h1>
+                        <img src="./assets/Secure login-amico.svg" alt="sign-up" class="signup-svg" >
+                        <button class="signup-btn">sign-up</button>
+                    </div>
+                        
+                    <div class="sign-up login-1">
+                        <h1 class="signup-title">login</h1>
+                        <img src="./assets/Secure login-rafiki.svg" alt="sign-up" class="signup-svg " >
+                        <button class="signup-btn">login</button>
+                    </div>
+                </div>
             </div>
-            </div>
-        </div>
+
+             
+            <!-- admin panel -->
+            <div class="admin-container">
+                <div id="admin-panel" class="panel">
+                    <div class="sign-up login-1">
+                        <h1 class="signup-title">sign-up</h1>
+                        <img src="./assets/Sign up-rafiki.svg" alt="sign-up" class="signup-svg admin-svg" >
+                        <button class="signup-btn ">sign-up</button>
+                    </div>
+                        
+                    <div class="login login-1">
+                        <h1 class="signup-title">login</h1>
+                        <img src="./assets/Tablet login-rafiki.svg" alt="sign-up" class="signup-svg admin-svg" >
+                        <button class="signup-btn">login</button>
+                    </div>
+                </div>
+             </div>
 
     </div>
 
