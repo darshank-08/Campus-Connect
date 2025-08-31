@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Sign-up</title>
+    <link rel="stylesheet" href="std-signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qwigley&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="signup-page">
+        <div class="signup-form">
+            <div class="sign-up-1">
+                <h1 class="std-signup-qoute">Create an account</h1>
+
+                <p class="std-signup-para">already have an account? <a href="">Log in</a></p>
+                    <form action="std-signup.php" method="POST" class="std-signup-form">
+
+                        <input type="text" name="std-name" id="fullname" class="input-fuild" placeholder="Full Name" required>
+
+                        <input type="email" name="std-email" class="input-fuild" placeholder="E-mail / Mobile Number" required>
+
+                        <input type="text" name="std-username" class="input-fuild" placeholder="Username" required>
+                
+                        <input type="password" name="std-password" class="input-fuild" placeholder="Password" required>
+
+                        <input type="password" name="std-confirm-password" class="input-fuild" placeholder="Confirm Password" required>
+                
+                    </form>
+                
+                    <button class="Create-acc" type="submit">Craete account</button>
+            </div>
+
+            <div class="sign-up-2">
+                <p class="or">Or register with</p>
+                <div class="social-media">
+                    <button class="google"> <img src="./assets/google-icon-logo-svgrepo-com.svg" alt="" srcset=""> Google </button>
+                    <button class="Apple"> <img src="./assets/apple-logo-svgrepo-com.svg" alt=""> Apple </button>
+                    <button class="github"> <img src="./assets/github-142-svgrepo-com.svg" alt=""> Github </button>
+                </div>
+            </div>
+  
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
