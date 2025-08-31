@@ -43,3 +43,18 @@ $(".navbar button").click(function(){
   $("#" + curruntbtn + "-panel").show();
   console.log("#" + curruntbtn + "-panel");
 });
+
+$(".toggle-password").click(function() {
+  const passwordField = $(this).siblings(".password");
+  const icon = $(this).find(".icon");
+
+  if (passwordField.attr("type") === "password") { // if password is hidden
+    passwordField.attr("type", "text");
+    icon.attr("src", "./assets/eye-off-svgrepo-com.svg"); // change to closed-eye
+    icon.attr("alt", "Hide Password");
+  } else { // if password is visible
+    passwordField.attr("type", "password");
+    icon.attr("src", "./assets/eye-svgrepo-com.svg"); // change back to open-eye
+    icon.attr("alt", "Show Password");
+  }
+});
