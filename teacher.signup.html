@@ -3,18 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Log in</title>
-    <link rel="stylesheet" href="std-login.css">
+    <title>Teacher Sign-up in</title>
+    <link rel="stylesheet" href="teacher-signup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Qwigley&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="login-page">
-        <div class="login-form">
-           <div class="login-1">
-               
+    <div class="signup-page">
+        <div class="signup-form">
+           <div class="signup-1">
+                <h1 class="std-signup-qoute">Create an account</h1>
+
+                <p class="std-signup-para">already have an account? <a href="./std-login.html">Log in</a></p>
+                    <form action="std-signup.php" method="POST" class="std-signup-form">
+
+                        <input type="text" name="tchr-name" id="fullname" class="input-fuild" placeholder="Full Name" required>
+
+                        <input type="email" name="tchr-email" class="input-fuild" placeholder="Email" required>
+
+                            <div class="dropdown-list input-fuild">
+                                <select id="department" name="department" class="dropdown-opt" required>
+                                    <option value="" selected>Select Department</option>
+                                    <option value="cse">Computer Science</option>
+                                    <option value="it">Information Technology</option>
+                                    <option value="commerce">Commerce</option>
+                                    <option value="management">Management</option>
+                                    <option value="arts">Arts</option>
+                                    <option value="science">Science</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                
+                        <div class="password-field">
+                            <input type="password" id="tchr-password" placeholder="Password" class=" password input-fuild" required>
+                            <span class="toggle-password">
+                                <img class="icon" src="./assets/eye-svgrepo-com.svg" alt="">
+                            </span>
+                        </div>
+
+
+                        <input type="password" name="tchr-confirm-password" class="input-fuild" placeholder="Confirm Password" required>
+                
+                    </form>
+                
+                    <button class="Create-acc" type="submit">Create account</button>
+                    <button class="google"> <img src="./assets/google.svg" alt="" srcset=""> Google </button>
             </div>
 
         </div>
