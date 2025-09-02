@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-up / Login</title>
+    <title>Student Log in</title>
     <link rel="stylesheet" href="student-login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,71 +11,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Qwigley&display=swap" rel="stylesheet">
 </head>
 <body>
-
-
-    <div class="std-login">
-        <nav class="navbar">
-            <button class="student">Student</button>
-            <p>|</p>
-            <button class="teacher">Teacher</button>
-            <p>|</p>
-            <button class="admin">Admin</button>
-        </nav>
-
+    <div class="login-page">
         <div class="login-form">
+           <div class="login-1">
+                <h1 class="std-login-qoute">Welcome back</h1>
 
-                <!-- student panel -->
-            <div class="student-container">
-                <div id="student-panel" class="panel">
-                    <div class="sign-up login-1">
-                        <h1 class="signup-title">sign-up</h1>
-                        <img src="./assets/Sign up-cuate.svg" alt="sign-up" class="signup-svg" >
-                        <a href="./std-signup.html"><button class="signup-btn">sign-up</button></a>
-                    </div>
-                        
-                    <div class="login login-1">
-                        <h1 class="signup-title">login</h1>
-                        <img src="./assets/Login-pana.svg" alt="sign-up" class="signup-svg" >
-                        <a href="./std-login.html"><button class="signup-btn">login</button></a>
-                    </div>
-                </div>
-            </div>
-                <!-- teacher panel -->
+                <p class="std-login-para">Don't have an account? <a href="./std-signup.html">Sign up</a></p>
+                    <form action="" method="POST" class="std-login-form">
 
-            <div class="teacher-container">
-                <div id="teacher-panel" class="panel">
-                    <div class="sign-up login-1">
-                        <h1 class="signup-title">sign-up</h1>
-                        <img src="./assets/Secure login-amico.svg" alt="sign-up" class="signup-svg" >
-                        <a href="./teacher.signup.html"><button class="signup-btn">sign-up</button></a>
-                    </div>
-                        
-                    <div class="sign-up login-1">
-                        <h1 class="signup-title">login</h1>
-                        <img src="./assets/Secure login-rafiki.svg" alt="sign-up" class="signup-svg " >
-                        <a href=""><button class="signup-btn">login</button></a>
-                    </div>
-                </div>
+                        <input type="text" name="std-name" id="fullname" class="input-fuild" placeholder="Username or Email" required>
+                
+                        <div class="password-field">
+                            <input type="password" id="password" placeholder="Password" class="password input-fuild" required>
+                            <span class="toggle-password">
+                                <img class="icon" src="./assets/eye-svgrepo-com.svg" alt="">
+                            </span>
+                        </div>
+
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                
+                    </form>
+                
+                    <button class="login-btn" type="submit">Login</button>
+                    <button class="google"> <img src="./assets/google.svg" alt="" srcset=""> Google </button>
             </div>
 
-             
-            <!-- admin panel -->
-            <div class="admin-container">
-                <div id="admin-panel" class="panel">
-                    <div class="sign-up login-1">
-                        <h1 class="signup-title">sign-up</h1>
-                        <img src="./assets/Sign up-rafiki.svg" alt="sign-up" class="signup-svg admin-svg" >
-                        <a href=""><button class="signup-btn ">sign-up</button></a>
-                    </div>
-                        
-                    <div class="login login-1">
-                        <h1 class="signup-title">login</h1>
-                        <img src="./assets/Tablet login-rafiki.svg" alt="sign-up" class="signup-svg admin-svg" >
-                        <a href=""><button class="signup-btn">login</button></a>
-                    </div>
-                </div>
-             </div>
-
+        </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

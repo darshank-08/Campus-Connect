@@ -12,147 +12,315 @@ body{
      background-color: azure;
 }
 
-.std-login{
-    background: linear-gradient(to bottom, #e4e9fd 0%, #f0f3e8 100%);
+.login-page{
+    background: rgb(54, 50, 66);
     height: 100vh;
     width:100%;
     overflow: hidden;
     background-position: center;
     display: flex;
+    grid-template-columns: 1fr 1fr;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
-}
-
-.navbar{
-    height: 2.5rem;
-    width: 280px;
-    background-color: azure;
-    border: 1px black solid;
-    display: flex;
-    border-radius: 23px;
-    justify-content: space-evenly;
-    align-items: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.navbar button {
-    padding: 8px 15px;
-    border: none;
-    border-radius: 20px;
-    background: none;
-    font-family: "Rubik", sans-serif;
-    font-size: 0.9rem;
-    cursor: pointer;
-}
-
-.navbar button.active {
-    background-color: black;
-    color: white;
 }
 
 .login-form{
-    border: black 1px solid;
-    height: 350px;
-    width: 600px;
+    height: 75%;
+    width: 90%;
+    max-width: 500px;
     border-radius: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-
-.panel{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    align-items: center;
-    justify-content: center;
-    gap: 70px;
+    background-color: rgb(35, 32, 44);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    gap: 10px;
 }
 
 .login-1{
+    height: 100%;
+    width: 70%;
     display: flex;
     flex-direction: column;
+    align-self: center;
+    justify-content: center; 
+    position: relative;
+    padding-left: 120px;
+
+}
+
+.std-login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: space-around;
+    width: 95%;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    align-self: flex-start;
 }
 
-.signup-title{
-    font-family: 'Lexend', sans-serif;
-    font-size: 2rem;
-    font-weight: 300;
-    margin-bottom: 3px;
-}
-
-.signup-svg{
-    height: 200px;
-    width: 200px;
-}
-
-.signup-btn{
-    width: 100px;
-    height: 30px;
-    border-radius: 20px;
-    border: none;
-    font-size: 0.8rem;
-    background-color: black;
+.std-login-qoute{
+    font-family:'Inter', 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
     color: white;
+    align-self: flex-start;
 }
 
-.signup-btn:hover{
-    background-color: black;
-    color: white;
+.std-login-para{
+    align-self: flex-start;
+    color: rgb(187, 184, 198);
+    font-family: "inter", "Poppins", sans-serif;
+    font-size: 0.55rem;
+}
+
+.std-login-para a{
+    color: rgb(131, 94, 234);
+    font-weight: 500;
+    text-decoration: underline;
     cursor: pointer;
-    transition: 0.24s;
 }
 
-/*for tablets*/
+.input-fuild{
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(45, 42, 56);
+    color: white;
+    align-self: start;
+}
 
-@media (min-width: 500px) and (max-width: 700px){
+.input-fuild::placeholder{
+    color: gray;
+}
+.toggle-password img{
+    filter: invert(1);
+    width: 20px;
+    height: 20px;
+}
+
+.password{
+    border: none;
+    background-color: rgb(45, 42, 56);
+    color: white;
+    align-items: flex-start;
+    width: 210px;
+}
+
+.password-field{
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 220px;
+}
+
+
+.password-field input{
+    background: rgb(45, 42, 56);
+}
+
+.toggle-password{
+    cursor: pointer;
+    position: relative;
+    right: 38px;
+    font-size: 0.9rem;
+    user-select: none;
+    height: 0px;
+    width: 0px;
+}
+
+.icon{
+    position: relative;
+    left: 12px;
+    bottom: 9px;
+}
+
+.forgot-password{
+    font-family: 'Inter', 'Poppins', sans-serif;
+    font-size: 0.55rem;
+    color: rgba(131, 94, 234, 0.491);
+    align-self: flex-start;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.login-btn{
+    width: 220px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(131, 94, 234);
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: flex-start;
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.google{
+    width: 220px;
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: flex-start;
+    position: relative;
+}
+
+.google img{
+    width: 15px;
+    height: 20px;
+    position: relative;
+    top: 4px;
+    right: 5px;
+}
+
+/* adding responsive ness to page */
+
+@media (min-width: 500px) and (max-width: 768px){
     .login-form{
-        height: 350px;
-        width: 450px;
+        width: 470px;
+        height: 60%;
+    } 
+
+    .login-1{
+        padding: 0px 0px 0px 90px;
     }
 
-    .panel{
-        gap: 20px;
+    .input-fuild{
+        width: 230px;
+    }
+
+    .password{
+        width: 240px;
+    }
+
+    .password-field{
+        width: 250px;
+    } 
+
+    .login-btn{
+        width: 250px;
+    }
+
+    .google{
+        width: 250px;
     }
 }
 
-/*for mobile phones*/
-@media (min-width: 310px) and (max-width: 500px){
+@media (min-width: 400px) and (max-width: 499px){
     .login-form{
-        height: 250px;
-        width: 270px;
+        width: 360px;
+        height: 60%;
     }
 
-    .navbar{
-        height: 2rem;
+    .login-1{
+        padding: 0px 0px 0px 60px;
+    }
+
+    .input-fuild{
+        width: 180px;
+    }
+
+    .password{
+        width: 180px;
+    }
+
+    .password-field{
         width: 200px;
+    }   
+
+    .icon{
+        right: 20px;
+        bottom: 10px;
     }
 
-    .navbar button{
-        padding: 5px 10px;
-        font-size: 0.7rem;
-    }
-    .panel{
-        gap: 10px;
+    .login-btn{
+        width: 202px;
     }
 
-    .signup-title{
-        font-size: 1.5rem;
-        margin-bottom: 0px;
+    .google{
+        width: 202px;
     }
 
-    .signup-svg{
-        height: 120px;
-        width: 120px;
+}
+
+@media (min-width: 310px) and (max-width: 399px){
+    .login-form{
+        width: 270px;
+        height: 60%;
     }
 
-   .signup-btn{
-        width: 80px;
-        height: 25px;
-        font-size: 0.7rem;
-   }
+    .login-1{
+        padding: 0px 0px 0px 15px;
+    }
+
+    .std-login-qoute{
+        font-size: 1.3rem;
+    }
+
+    .std-login-para{
+        font-size: 0.5rem;
+    }
+
+    .input-fuild{
+        width: 160px;
+    }
+
+    .password{
+        width: 160px;
+    }
+
+    .password-field{
+        width: 180px;
+    }   
+
+    .login-btn{
+        width: 180px;
+    }
+
+    .google{
+        width: 180px;
+    }
+}
+
+@media (max-width: 310px){
+    .login-1{
+        padding-left: 5px;
+    }
+
+    .input-fuild{
+        width: 160px;
+    }
+
+    .password{
+        width: 160px;
+    }
+
+    .password-field{
+        width: 180px;
+    } 
+
+    .login-btn{
+        width: 170px;
+    }
+
+    .google{
+        width: 170px;
+    }
 }
