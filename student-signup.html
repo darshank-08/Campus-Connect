@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Sign-up</title>
+    <title>Student Sign-up in</title>
     <link rel="stylesheet" href="student-signup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,45 +11,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Qwigley&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <div class="signup-page">
         <div class="signup-form">
-            <div class="sign-up-1">
+           <div class="signup-1">
                 <h1 class="std-signup-qoute">Create an account</h1>
 
                 <p class="std-signup-para">already have an account? <a href="./std-login.html">Log in</a></p>
-                    <form action="std-signup.php" method="POST" class="std-signup-form">
+                    <form action="" method="POST" class="std-signup-form">
 
                         <input type="text" name="std-name" id="fullname" class="input-fuild" placeholder="Full Name" required>
 
                         <input type="email" name="std-email" class="input-fuild" placeholder="Email" required>
 
-                        <input type="text" name="std-username" class="input-fuild" placeholder="Username" required>
+                        <input type="text" name="std-name" id="fullname" class="input-fuild" placeholder="Username" required>
                 
                         <div class="password-field">
-                            <input type="password" id="password" placeholder="Password" class=" password input-fuild" required>
+                            <input type="password" id="tchr-password" placeholder="Password" class=" password input-fuild" required>
                             <span class="toggle-password">
                                 <img class="icon" src="./assets/eye-svgrepo-com.svg" alt="">
                             </span>
                         </div>
 
 
-                        <input type="password" name="std-confirm-password" class="input-fuild" placeholder="Confirm Password" required>
+                        <input type="password" name="tchr-confirm-password" class="input-fuild" placeholder="Confirm Password" required>
                 
                     </form>
                 
                     <button class="Create-acc" type="submit">Create account</button>
-            </div>
-
-            <hr class="divider-line">
-
-            <div class="sign-up-2">
-                <p class="or">Or register with</p>
-                <div class="social-media">
                     <button class="google"> <img src="./assets/google.svg" alt="" srcset=""> Google </button>
-                </div>
             </div>
-  
+
         </div>
     </div>
 
