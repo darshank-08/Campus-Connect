@@ -167,7 +167,7 @@ body{
 @media (min-width: 500px) and (max-width: 768px){
     .signup-form{
         width: 470px;
-        height: 60%;
+        height: 85%;
     } 
 
     .signup-1{
@@ -184,23 +184,23 @@ body{
 @media (min-width: 400px) and (max-width: 499px){
     .signup-form{
         width: 360px;
-        height: 60%;
+        height: 85%;
     }
 
     .signup-1{
         padding: 0px 0px 0px 30px;
     }
 
-    .std-signup-qoute{
+    .admin-signup-qoute{
         padding-left: 25px;
     }
 
-    .std-signup-para{
+    .admin-signup-para{
         padding-left: 26px;
     }
 
-    .std-signup-form{
-        padding-left: 25px;
+    .admin-signup-form{
+        padding-left: 23px;
     }
 
     .password-field{
@@ -220,32 +220,39 @@ body{
     }
 
     .signup-1{
-        padding: 0px 0px 0px 15px;
+        padding: 0px 0px 0px 20px;
     }
 
-    .std-signup-qoute{
-        padding-left: 15px;
+    .admin-signup-qoute{
+        padding-left: 4px;
         font-size: 1.2rem;
     }
 
-    .std-signup-para{
-        padding-left: 16px;
+    .admin-signup-para{
+        padding-left: 4px;
         margin-top: 3px;
         font-size: 0.50rem;
     }
 
-    .std-signup-form{
-        padding-left: 20px;
+    .admin-signup-form{
+        padding-left: 0px;
     }
+
+    .input-fuild{
+        width: 100%;
+    }
+
     .password-field{
         left: 1px;
     }
+    
     .password{
-        width: 118px;
+        width: 147px;
     }
 
     .Create-acc{
-        margin-right: 15px;
+        margin-right: 20px;
+        width: 167px;
     }
 
     .google{
