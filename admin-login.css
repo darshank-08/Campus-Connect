@@ -51,7 +51,7 @@ body{
 
 }
 
-.teacher-login-form{
+.admin-login-form{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -63,7 +63,7 @@ body{
     align-self: flex-start;
 }
 
-.teacher-login-qoute{
+.admin-login-qoute{
     font-family:'Inter', 'Poppins', sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
@@ -71,14 +71,14 @@ body{
     align-self: flex-start;
 }
 
-.teacher-login-para{
+.admin-login-para{
     align-self: flex-start;
     color: rgb(187, 184, 198);
     font-family: "inter", "Poppins", sans-serif;
     font-size: 0.55rem;
 }
 
-.std-login-para a{
+.admin-login-para a{
     color: rgb(131, 94, 234);
     font-weight: 500;
     text-decoration: underline;
